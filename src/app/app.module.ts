@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {UserService} from './services/user.service';
 import {MessagesService} from './services/messages.service';
+import {ThreadsService} from './services/threads.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MessagesService} from './services/messages.service';
   ],
   providers: [
     UserService,
-    MessagesService
+    MessagesService,
+    ThreadsService
   ],
   bootstrap: [AppComponent]
 })
